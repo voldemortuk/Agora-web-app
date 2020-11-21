@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="main.css">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="446013577076-4580eo3j262gbsof9vl399hdqpuubo2i.apps.googleusercontent.com">
+    <link rel="icon" href="https://agoraio-community.github.io/AgoraWebSDK-NG/img/logo.png" sizes="16x16">
+</head>
+
+<body class="body">
+    <center>
+        <section class="signn">
+            <div class="col-xs-8 ">
+
+
+                <div class="jumbotron jumbotron-special">
+
+                    <div class="container2">
+                        <img src="https://www.agora.io/en/wp-content/uploads/2019/06/agoralightblue-1.png" style="margin-top: -100px;margin-left:50%">
+
+                        <form action="/action_page.php">
+
+
+
+                            <pre>
+                                
+                             
+                            <input id="username" type="text" placeholder="Username"  required>
+                            
+                            <input type="password" placeholder="********"  type="password" required>
+
+
+                            <button id=btn19 class="btn  navbar-btn " onclick="window.location.href='./new_avc.html'">SIGNIN</button>
+
+
+
+                        </form>
+
+
+                    </div>
+
+                    <div class="flex-container">
+                        <div id="signlog" class="col-xl-8">
+                            <div class="aligntt">
+                                <h1 class="display-6">Welcome Back!</h1>
+
+                                <p>To keep connected with us please login with your google account</p>
+                                
+                                <button id=btn19 class="btn  navbar-btn g-signin2"  data-onsuccess="onSignIn"></button>
+                                
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+    </center>
+
+
+    <script>
+
+
+                    function onSignIn(googleUser) {
+                        var profile = googleUser.getBasicProfile();
+                        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
+                        console.log('Name: ' + profile.getName());
+                        console.log('Image URL: ' + profile.getImageUrl());
+                        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
+                        updateName(profile.getName());
+                        window.location.href = './new_avc.html'
+                    }
+
+                    function updateName(name) {
+                        document.getElementById("username").value = name;
+                    }
+                </script>
+</body>
+
+</html>

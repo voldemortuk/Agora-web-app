@@ -1,0 +1,476 @@
+             /*  ----------------------------------------------------
+1. Header
+-------------------------------------------------------- */
+             
+             .body {
+                 background-color: #d9d9d9;
+             }
+             
+             .ul {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                 overflow: hidden;
+             }
+             
+             .li {
+                 float: left;
+             }
+             
+             .navbar {
+                 list-style-type: none;
+                 margin: 0;
+                 padding: 0;
+                 overflow: hidden;
+                 background-color: #0e77c2;
+             }
+             /*  -----------------Header ends---------------------- */
+             /*  ----------------------------------------------------
+2. Cover
+-------------------------------------------------------- */
+             
+             .co .bg-grey {
+                 background: #f5f5f5;
+                 border: 1px solid hsla(0, 0%, 72%, .25)
+             }
+             
+             .push-content-down {
+                 padding-top: 72px;
+             }
+             
+             @media only screen and (max-width:990px) {
+                 .monq-footer {
+                     margin-top: 5px;
+                     padding-left: 10px;
+                     padding-right: 10px
+                 }
+             }
+             
+             .input {
+                 position: relative;
+                 width: 100%;
+                 z-index: 1
+             }
+             
+             .input-with-icon .icon-lft,
+             .input-with-icon .icon-rgt {
+                 pointer-events: none;
+                 position: absolute;
+                 z-index: 2;
+                 top: 50%;
+                 transform: translateY(-50%);
+                 cursor: pointer
+             }
+             
+             .disp-table {
+                 display: table;
+                 width: 100%;
+                 padding: 0;
+                 margin: 0
+             }
+             
+             @media only screen and (max-width:640px) {
+                 .disp-table {
+                     display: block
+                 }
+             }
+             
+             .disp-table .disp-table-cell {
+                 display: table-cell;
+                 vertical-align: top
+             }
+             
+             @media only screen and (max-width:640px) {
+                 .disp-table .disp-table-cell {
+                     display: inline-block;
+                     width: 100%;
+                     text-align: center
+                 }
+             }
+             
+             input[type=email]:focus,
+             input[type=password]:focus,
+             input[type=select]:focus,
+             input[type=text]:focus {
+                 background-size: 100% 1px
+             }
+             
+             input[type=email],
+             input[type=password],
+             input[type=select],
+             input[type=text] {
+                 background-image: -webkit-linear-gradient(#3c3c3c, #3c3c3c);
+                 background-image: linear-gradient(#3c3c3c, #3c3c3c);
+                 background-size: 0 1px;
+                 background-repeat: no-repeat;
+                 background-position: bottom, 50% calc(100% - 1px);
+                 -webkit-transition: background .3s ease-out;
+                 transition: background .3s ease-out
+             }
+             
+             .anchor-tabs-content {
+                 min-height: 162px;
+                 padding: 30px 30px 0 10px
+             }
+             
+             .hero-bg {
+                 position: relative;
+                 background-size: cover;
+                 -webkit-background-size: cover;
+                 -moz-background-size: cover;
+                 -o-background-size: cover;
+                 background-image: url("herobg.jpg");
+                 background-attachment: fixed;
+                 background-position: 50%;
+                 background-repeat: no-repeat;
+                 -webkit-transition: all .3s ease-in-out;
+                 -moz-transition: all .3s ease-in-out;
+                 -o-transition: all .3s ease-in-out;
+                 -ms-transition: all .3s ease-in-out;
+                 transition: all .3s ease-in-out
+             }
+             
+             @media only screen and (max-width:768px) {
+                 .hero-bg {
+                     background-position: 33% 0
+                 }
+             }
+             
+             .hero-bg>.row {
+                 background: rgba(0, 0, 0, .5);
+                 height: 100%
+             }
+             
+             .bg-gradient {
+                 padding: 25px;
+                 background: rgba(0, 0, 0, .5);
+                 border-radius: 4px 4px 4px 4px;
+                 -webkit-border-radius: 4px 4px 4px 4px;
+                 -moz-border-radius: 4px 4px 4px 4px border
+             }
+             
+             @media only screen and (max-width:736px) {
+                 .bg-gradient {
+                     padding: 15px 25px;
+                     background: transparent;
+                 }
+             }
+             
+             .search-content .search-engine .input {
+                 font-size: .929em;
+                 line-height: 14px;
+                 padding-top: 14px
+             }
+             
+             @media only screen and (max-width:736px) {
+                 .search-content .col-lg-5 .bg-gradient {
+                     margin-left: 0;
+                     padding: 15px 0 5px;
+                     background: #f5f5f5;
+                     float: left;
+                     border-radius: 0 0 0 0;
+                     -webkit-border-radius: 0 0 0 0;
+                     -moz-border-radius: 0 0 0 0
+                 }
+             }
+             
+             .search-content .col-lg-5 .bg-gradient.user-action {
+                 border-spacing: 20px;
+                 padding: 0
+             }
+             
+             .search-content .col-lg-5 .bg-gradient.user-action .disp-table-cell {
+                 background: #fff
+             }
+             
+             .engage {
+                 padding: 15px 10px;
+                 background-color: #fff
+             }
+             
+             .engage .resume-btn,
+             .engage .txt-email {
+                 width: 166px;
+                 height: 180px;
+             }
+             
+             .search-content-holder {
+                 margin-bottom: 40px
+             }
+             
+             h2.medium {
+                 font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                 font-size-adjust: inherit;
+                 font-size: 1.2em;
+                 text-align: center;
+             }
+             /*  ----------------------------------------------------
+3.Buttons
+-------------------------------------------------------- */
+             
+             #btn11 {
+                 border: 2px solid #ffffff;
+                 margin-left: 80px;
+                 padding-top: 3px;
+                 padding-right: 30px;
+                 padding-bottom: 3px;
+                 padding-left: 30px;
+                 font-size: 13px;
+                 color: #ffff;
+             }
+             
+             #btn12 {
+                 border: 1px solid #ffffff;
+                 margin-left: 100px;
+                 padding-top: 3px;
+                 padding-right: 30px;
+                 padding-bottom: 3px;
+                 padding-left: 30px;
+                 font-size: 13px;
+                 color: #ffff;
+             }
+             
+             #btn13 {
+                 color: #ffff;
+                 height: 80px;
+                 width: 170px;
+                 top: 50%;
+                 left: 50%;
+             }
+             
+             #btn14 {
+                 color: #ffff;
+                 height: 40px;
+                 width: 80x;
+                 font-size-adjust: inherit;
+                 font-size: 15px;
+             }
+             
+             #btn15 {
+                 border: 1px solid #ffffff;
+                 margin-left: 100px;
+                 font-size: 13px;
+                 color: #ffff;
+             }
+             
+             #btn16 {
+                 margin-left: 100px;
+                 font-size: 13px;
+                 background-color: #0e77c2;
+                 color: #ffff;
+                 position: absolute;
+                 margin: 115px 80px;
+                 padding: 3px 30px 3px 30px;
+                 font-size: 14px;
+             }
+             
+             #btn17 {
+                 margin-left: 100px;
+                 font-size: 13px;
+                 background-color: #0e77c2;
+                 color: #ffff;
+                 position: absolute;
+                 margin: 115px 200px;
+                 padding: 3px 20px 3px 20px;
+                 font-size: 14px;
+             }
+             
+             #btn18 {
+                 border: 3px solid #ffffff;
+                 border-radius: 30px;
+                 margin-top: 15px;
+                 margin-left: 15px;
+                 padding-top: 20px;
+                 padding-right: 70px;
+                 padding-bottom: 15px;
+                 padding-left: 70px;
+                 font-size: 13px;
+                 color: #ffff;
+             }
+             
+             #btn19 {
+                 border: 3px solid #ffffff;
+                 border-radius: 30px;
+                 margin-top: 50px;
+                 margin-left: 15px;
+                 padding-top: 20px;
+                 padding-right: 70px;
+                 padding-bottom: 15px;
+                 padding-left: 70px;
+                 font-size: 13px;
+                 background-color: #0e77c2;
+                 color: #ffff;
+             }
+             /*  ----------------------------------------------------
+4. Body
+-------------------------------------------------------- */
+             
+             #bodyjobs {
+                 margin-top: 20px;
+                 position: relative;
+             }
+             
+             #searchjobbystreams {
+                 background-color: #0e77c2;
+                 position: absolute;
+                 text-align: left;
+                 margin-top: 20px;
+                 color: #eeeded;
+                 font-size: 1.5vw;
+                 font-family: "Roboto";
+                 width: 97.7%;
+             }
+             
+             p.bar {
+                 left: 30px;
+                 top: 8px;
+                 position: relative;
+             }
+             
+             .jumbotron.jumbotron-fluid {
+                 height: 298px;
+                 background-color: #ffffff;
+             }
+             
+             .smalldiv {
+                 position: absolute;
+                 background-color: #e6e6e6;
+                 height: 180px;
+                 width: 300px;
+                 margin-top: 90px;
+                 margin-bottom: 30px;
+                 margin-left: 7%;
+                 border: 1px solid #908888;
+                 border-radius: 5px;
+             }
+             
+             li.bar2 {
+                 list-style-type: none;
+                 text-align: start;
+                 align-content: flex-end;
+                 font-size: 18px;
+                 color: #0e77c2;
+             }
+             
+             .jobvac {
+                 margin-top: 60px;
+             }
+             
+             .smallidiv {
+                 position: absolute;
+                 background-color: #e6e6e6;
+                 height: 180px;
+                 width: 300px;
+                 margin-top: 90px;
+                 margin-bottom: 30px;
+                 margin-left: 40%;
+                 border: 1px solid #908888;
+                 border-radius: 5px;
+             }
+             
+             .smallidivi {
+                 position: absolute;
+                 background-color: #e6e6e6;
+                 height: 180px;
+                 width: 300px;
+                 margin-top: 90px;
+                 margin-bottom: 30px;
+                 margin-left: 70%;
+                 border: 1px solid #908888;
+                 border-radius: 5px;
+             }
+             
+             .skilllab {
+                 position: absolute;
+                 height: 180px;
+                 width: 300px;
+                 margin-top: 140px;
+             }
+             /*  ----------------------------------------------------
+5. Signup & Login--------------------------------------- */
+             
+             .jumbotron-special {
+                 width: 80%;
+                 height: 550px;
+                 padding: 0px;
+                 margin: 0px;
+                 opacity: 0.7;
+                 text-align: center;
+                 margin-top: 100px;
+                 border: 3px solid #0e77c2;
+                 border-radius: 5px;
+             }
+             
+             .flex-container {
+                 -webkit-flex-wrap: wrap;
+                 /* Safari */
+                 flex-wrap: wrap;
+                 display: flex;
+             }
+             
+             .flex-container>div {
+                 background-color: #0e77c2;
+                 margin: -65px -32px;
+                 position: absolute;
+                 height: 548px;
+                 width: 29%;
+                 border: 3px solid #0e77c2;
+                 border-radius: 5px;
+             }
+             
+             #signlog {
+                 color: #ffffff;
+             }
+             
+             .aligntt {
+                 margin: 40% 30px;
+             }
+             
+             input[type=text],
+             input[type=password] {
+                 padding: 8px 20px;
+                 display: inline-block;
+                 border: 1px solid #ffffff;
+                 box-sizing: border-box;
+                 background-color: #ffffff;
+                 width: 400px;
+             }
+             
+             .container2 {
+                 padding: 20px;
+                 position: absolute;
+                 margin-right: 0rem;
+                 margin-left: 20%;
+                 margin-top: 70px;
+             }
+             
+             h2.center {
+                 text-align: center;
+             }
+             /*  ----------------------------------------------------
+8. Footer
+-------------------------------------------------------- */
+             
+             .footer {
+                 padding: 15px 20px;
+                 background-color: #0e77c2;
+                 border-bottom-right-radius: 4px;
+                 border-bottom-left-radius: 3x;
+                 display: block;
+                 margin-right: -15px;
+                 padding-left: 50px;
+                 margin-top: 250px;
+                 color: #ffffff;
+                 font-family: Roboto;
+             }
+             
+             .row {
+                 margin-right: -15px;
+                 margin-left: -15px;
+             }
+             
+             .footerli {
+                 color: #e6e6e6;
+                 font-family: Roboto;
+             }
+             /*  -----------------Footer ends---------------------- */
